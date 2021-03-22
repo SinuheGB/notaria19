@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        body{
+            background-image: url(public/img/frente1.jpg);
+            background-attachment: fixed;
+            
+            margin: 100px;
+            
+        }
+    </style>
+    
+    <script>
+          document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.datepicker');
+    var instances = M.Datepicker.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
+    </script>
+</head>
+
+<body>
+    
+    <div class="row">
+        <div class="s3">
+            <h3>Tramite de compraventa y donación</h3>
+            <form action="#">
+                <p>
+                  <label>
+                    <input name="group1" type="radio" checked />
+                    <span class="black-text">Compraventa</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input name="group1" type="radio" />
+                    <span class="black-text">Donación</span>
+                  </label>
+                </p>
+               </form>
+            </div>
+
+            <div class="s3">
+                <h3>El vendedor o donante es </h3>
+                <form action="#">
+                    <p>
+                      <label>
+                        <input name="group1" type="radio" checked />
+                        <span class="black-text">Persona Moral</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group1" type="radio" />
+                        <span class="black-text">Persona fisica</span>
+                      </label>
+                    </p>
+                   </form>
+
+                   <h3>El comprador o donatario es</h3>
+                   <form action="#">
+                    <p>
+                      <label>
+                        <input name="group1" type="radio" checked />
+                        <span class="black-text">Persona Moral</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group1" type="radio" />
+                        <span class="black-text">Persona fisica</span>
+                      </label>
+                    </p>
+                   </form>
+                </div>
+    
+<section id="comprador fisico">
+               <h4 class="center">Vendedor - Donante personas fisicas</h4>     
+
+               <div class="input-field col s4">
+                <input placeholder="Apellido paterno" id="Apellido paterno" type="text" class="validate">
+                <label  class="black-text" for="Apellido paterno">Apellido paterno</label>      
+              </div>
+
+              <div class="input-field col s4">
+                <input placeholder="Apellido materno" id="Apellido materno" type="text" class="validate">
+                <label  class="black-text" for="Apellido materno">Apellido materno</label>      
+              </div>
+
+              <div class="input-field col s4">
+                <input placeholder="Nombre" id="Nombre" type="text" class="validate">
+                <label  class="black-text" for="Nombre">Nombre (s)</label>      
+              </div>
+              
+              <div class="input-field col s4">
+                <input placeholder="Fecha de nacimiento" id="Fecha nacimiento" type="date" class="validate">
+                <label  class="black-text" for="Fecha nacimiento">Fecha de nacimiento</label>      
+              </div>
+
+              <div class="input-field col s4">
+                <input placeholder="CURP" id="CURP" type="text" class="validate">
+                <label  class="black-text" for="CURP ">CURP</label>      
+              </div>
+
+              <div class="input-field col s4">
+                <input placeholder="RFC" id="RFC" type="text" class="validate">
+                <label  class="black-text" for="RFC">RFC</label>      
+              </div>
+
+              <div class="input-field col s4">
+                <input placeholder="INE" id="INE" type="text" class="validate">
+                <label  class="black-text" for="INE">INE</label>                  
+              </div>
+
+              <div class="input-field col s4">
+                <input placeholder="Cuenta bancaria" id="Cuenta" type="text" class="validate">
+                <label  class="black-text" for="Cuenta">Cuenta bancaria</label>                  
+              </div>
+
+              <div class="input-field col s4">
+                <input placeholder="Banco" id="Banco" type="text" class="validate">
+                <label  class="black-text" for="Banco">Banco</label>                  
+              </div>
+
+              
+              <div class="input-field col s4">
+                <p>Acta de nacimiento</p>
+                <input placeholder="Acta de nacimiento" id="Acta de nacimiento" type="file" class="validate">                                  
+              </div>
+              
+              <div class="input-field col s4">
+                <p>Copia de identificacion</p>
+                <input placeholder="identificacion" id="identificacion" type="file" class="validate">                                  
+              </div>
+
+              <div class="input-field col s4">
+                <p>Constancia de situacion fiscal</p>
+                <input placeholder="RFCescaneado" id="RFCescaneado" type="file" class="validate">                                  
+              </div>
+
+    </div>
+    <H4 class="center">Dirección</H4>
+    <div class="row">
+        <div class="input-field col s4">
+          <input placeholder="Calle" id="Calle" type="text" class="validate">
+          <label  class="black-text" for="Calle">Calle</label>      
+        </div>
+
+        <div class="input-field col s4">
+          <input placeholder="Numero" id="Numero" type="text" class="validate">
+          <label  class="black-text" for="Numero">Numero</label>      
+        </div>
+
+        <div class="input-field col s4">
+          <input placeholder="Colonia o Fraccionamiento" id="Colonia" type="text" class="validate">
+          <label  class="black-text" for="Colonia">Colonia o Fraccionamiento</label>      
+        </div>    
+    </div>       
+        <h4 class="center">Estado civil</h4>
+        <form action="#">
+            <p>
+              <label>
+                <input name="group1" type="radio" checked />
+                <span>Soltero</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input name="group1" type="radio" />
+                <span>Casado</span>
+              </label>
+            </p>
+           </form>
+        </div>
+    </div>
+    <h4 class="center">Datos del inmueble</h4>
+    <div class="row">
+
+    <div class="input-field col s4">
+      <input placeholder="Escritura" id="Escritura" type="text" class="validate">
+      <input placeholder="Escritura" id="Escritura" type="file" class="validate">
+      <label  class="black-text" for="Escritura">Escritura (antecedente)</label>                  
+    </div>
+  
+    <div class="input-field col s4">
+      <input placeholder="Cancelacion" id="Cancelacion" type="text" class="validate">
+      <input placeholder="Cancelacion" id="Cancelacion" type="file" class="validate">
+      <label  class="black-text" for="Cancelacion">Cancelacion de hipoteca *</label>                  
+    </div>
+
+    <div class="input-field col s4">
+      <input placeholder="Avaluo" id="Avaluo" type="text" class="validate">
+      <input placeholder="Avaluo" id="Avaluo" type="file" class="validate">
+      <label  class="black-text" for="Avaluo">Avaluo comercial</label>                  
+    </div>
+
+    <div class="input-field col s4">
+      <input placeholder="Alineamiento" id="Alineamiento" type="text" class="validate">
+      <input placeholder="Alineamiento" id="Alineamiento" type="file" class="Alineamiento">
+      <label  class="black-text" for="Alineamiento">Alineamiento y numero oficial</label>                  
+    </div>
+
+    <div class="input-field col s4">
+      <p>Recibo de luz</p>
+      <input placeholder="Luz" id="Luz" type="file" class="Luz">
+      
+    </div>
+
+    <div class="input-field col s4">
+      <p>Recibo del agua</p>
+      <input placeholder="Agua" id="Agua" type="file" class="Luz">      
+    </div>
+
+  <h4>Direccion del inmueble</h4>    
+
+    <div class="input-field col s4">
+      <input placeholder="Calle" id="Calle" type="text" class="validate">
+      <label  class="black-text" for="Calle">Calle</label>      
+    </div>
+
+    <div class="input-field col s4">
+      <input placeholder="Numero" id="Numero" type="text" class="validate">
+      <label  class="black-text" for="Numero">Numero</label>      
+    </div>
+
+    <div class="input-field col s4">
+      <input placeholder="Colonia o Fraccionamiento" id="Colonia" type="text" class="validate">
+      <label  class="black-text" for="Colonia">Colonia o Fraccionamiento</label>      
+    </div>    
+
+    <div class="input-field col s4 ">
+      <input placeholder="Propietario" id="Propietario" type="text" class="validate">      
+      <label  class="black-text" for="Propietario">Propietario</label>                  
+    </div>
+
+    <div class="input-field col s4 ">
+      <input placeholder="Valor catastral" id="Valor catastral" type="text" class="validate">      
+      <label  class="black-text" for="Valor catastral">Valor catastral</label>                  
+    </div>
+
+    <div class="input-field col s4 ">
+      <input placeholder="Precio de venta" id="Precio de venta" type="text" class="validate">      
+      <label  class="black-text" for="Precio de venta">Precio de venta</label>                  
+    </div>
+
+    <div class="btn red ">
+      <span>Subir</span>
+      <input type="file">
+    </div>
+
+    <div class="input-field col s4">
+      <p>Comprobante de domicilio</p>    
+      <input placeholder="Comprobante" id="Comprobante" type="file" class="validate ">
+    </div>
+
+  </div>
+
+  
+</section>
+
+<section>
+
+  <h4 class="center">Comprador - Donatario personas fisicas</h4>     
+<div class="row">
+  <div class="input-field col s4">
+   <input placeholder="Apellido paterno" id="Apellido paterno" type="text" class="validate">
+   <label  class="black-text" for="Apellido paterno">Apellido paterno</label>      
+ </div>
+
+ <div class="input-field col s4">
+   <input placeholder="Apellido materno" id="Apellido materno" type="text" class="validate">
+   <label  class="black-text" for="Apellido materno">Apellido materno</label>      
+ </div>
+
+  <div class="input-field col s4">
+   <input placeholder="Nombre" id="Nombre" type="text" class="validate">
+   <label  class="black-text" for="Nombre">Nombre (s)</label>      
+ </div>
+ 
+ <div class="input-field col s4">
+  <input placeholder="Fecha de nacimiento" id="Fecha nacimiento" type="date" class="validate">
+   <label  class="black-text" for="Fecha nacimiento">Fecha de nacimiento</label>      
+ </div>
+
+ <div class="input-field col s4">
+   <input placeholder="CURP" id="CURP" type="text" class="validate">
+   <label  class="black-text" for="CURP ">CURP</label>      
+ </div>
+
+ <div class="input-field col s4">
+   <input placeholder="RFC" id="RFC" type="text" class="validate">
+   <label  class="black-text" for="RFC">RFC</label>      
+ </div>
+
+ <div class="input-field col s4">
+   <input placeholder="INE" id="INE" type="text" class="validate">
+   <label  class="black-text" for="INE">INE</label>                  
+ </div>
+
+ <div class="input-field col s4">
+  <p>Acta de nacimiento</p>
+  <input placeholder="Acta de nacimiento" id="Acta de nacimiento" type="file" class="validate">                                  
+</div>
+
+<div class="input-field col s4">
+  <p>Copia de identificacion</p>
+  <input placeholder="identificacion" id="identificacion" type="file" class="validate">                                  
+</div>
+
+<div class="input-field col s4">
+  <p>Constancia de situacion fiscal</p>
+  <input placeholder="RFCescaneado" id="RFCescaneado" type="file" class="validate">                                  
+</div>
+
+
+</div>
+</div>
+<H4 class="center">Dirección</H4>
+<div class="row">
+<div class="input-field col s4">
+<input placeholder="Calle" id="Calle" type="text" class="validate">
+<label  class="black-text" for="Calle">Calle</label>      
+</div>
+
+<div class="input-field col s4">
+<input placeholder="Numero" id="Numero" type="text" class="validate">
+<label  class="black-text" for="Numero">Numero</label>      
+</div>
+
+<div class="input-field col s4">
+<input placeholder="Colonia o Fraccionamiento" id="Colonia" type="text" class="validate">
+<label  class="black-text" for="Colonia">Colonia o Fraccionamiento</label>      
+</div>    
+</div>       
+<h4 class="center">Estado civil</h4>
+<form action="#">
+<p>
+ <label>
+   <input name="group1" type="radio" checked />
+   <span>Soltero</span>
+ </label>
+</p>
+<p>
+ <label>
+   <input name="group1" type="radio" />
+   <span>Casado</span>
+ </label>
+</p>
+</form>
+</div>
+</div>
+
+</section>
+
+    
+</body>
+</html>
